@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <title>Bootstrap Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" style="background-color:#0070BA; width: 100%;">
+      <a class="navbar-brand fw-bold" href="#" style="color: white; margin-left: 16px; ">Starbhak Mart</a>
+  </nav>
+
+  <div class="row">
+
+    <div id="content" class="col-md-3" style="padding-right: 6px;">
+      <div class="dropdown grid ms-0" style="padding-top: 2px; padding-right: 0px;" >
+        <button class="btn btn-primary dropdown-toggle g-col-12 rounded-0" style="background-color: #00A1EC; padding-bottom: 10px; padding-top: 10px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Take Away
+        </button>
+        <ul class="dropdown-menu text-center" style="width: 100%;">
+          <li><a class="dropdown-item fw-bold" href="#">Take away</a></li>
+            <li><a class="dropdown-item fw-bold" href="#">dinein in</a></li>
+          </ul>
+        </div>
+        <div class="grid row-gap-3 ms-0" style="padding-top: 4px; padding-right: 0px;">
+          <div class="btn btn-primary g-col-12 rounded-0" style="background-color: #00A1EC; padding-bottom: 6px; padding-top: 6px;" type="button">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAg5JREFUWEft1j3oTmEYx/HP30sGZFGIMCoTQmIwSDJYRAZJJtlEEQPK6z/JggySDAZioGTCQAYSUV7KYMCqiIh06Tzeep7nvu/zeE7/5K4znd91/b7nd859nXvAEFsDQ4zHPwU0FluwAHOqpO/iFg7jQ5306ya0COcwpYPpC6zGvVKoOkALcR0jE2aR0Dw8KoEqBRqD55iYafIUM/ElU1/8UW/AqdzmlW45rubWlCZ0Butym1e6Q9ieW1MKdA1Lc5tXustYkVtTCnQBK3ObV7rz1Y7LKisFiugPZHX+KYpZdSS3phRoKmLGDM80+IxpeJ2pL95l0fcYNmUaDGJbpva7rDShqBmFK1iSMLqEVSUzqC5Q1A3DVuxtM7HfVfdOliTT0tZJ6Fef0ZiF2fiE+3iAj3Vgekmorl+yrteEkgalgjpAM6ofZoyAcR0M3+IlHuNJCVQuUBzGdmI9JpQYVDPoNPbjfao2B2gZzmJ8qlni/huswc1uuhTQRhyvOa/a+X7F2uq02ZarG9Bc3MaIHpP5szxGQvRue5LsBBTH02eY/pdhWu0eVvMrEvttdQKK/8/BPsG02sbpMz72LKBXmNRnoJjqMeGTQPNxp88wrfaTEQ//Y7V7ZbGzTjQEFKfPiymgHdjXENBmHE0B7cauhoD2IPy6vrLFiKuJdQNxdQVqAqSjR+rX0Tjcf6BU5N8AV7NIJYENqSIAAAAASUVORK5CYII=">
+            sto.yizz
+          </div>
+        </div>
+        
+        <div class="card rounded-0" style="margin-top: 3px; height: 68%; display: flex; overflow-y: scroll;">
+          <div class="padding-left: 20px; margin-top: 20x;">
+            <div class="tampilan">
+                                
+            </div>
+          </div>
+        </div>
+        
+      
+        <div class="card rounded-0" style="margin-top: 3px; height: 10%; display: flex;">
+          <div style="padding-left: 4px; margin-top: 20x;">
+            <h6 class="card-title fw-bold d-flex justify-content-between" style="margin-left: 5px;">Discount:</h6>
+            <div style="display: flex; align-items: baseline; margin-left: 5px;">
+              <p class="fw-bold" style="margin-right: 5px; margin-bottom: 0px;">Tax:</p>
+              <h6 class="fw-bold text-center" id="pajak">Rp.0</h6>
+            </div>        
+          </div>
+        </div>
+
+        <div class="card rounded-0" style="margin-top: 3px; height: 4%; display: flex; background-color: #00A1EC;">
+          <div style="padding-left: 4px; margin-top: 20x;">
+            <h6 class="card-title fw-bold d-flex justify-content-between">
+              Total Amount:
+              <p class="d-flex" id="total">Rp.0</p>
+            </h6>
+          </div>
+        </div>
+        
+    </div>   
+    <div class="col-md-9">
+      <div class="card mb-2 rounded-0" style="margin-top: 4px; margin-bottom: 4px; margin-left: 4px;">
+        <div class="card-body" style="padding-bottom: 8px; padding-top: 5px;">
+          <div class="d-flex justify-content-between align-items-center" style="width: 100%; height: 45%;">
+            <p class="fw-bold" style="font-size: medium; margin-bottom: 0%;">Item list</p>
+            <div class="col-md-auto">
+              <i class='bx bx-search bx-md'></i>
+              <i class='bx bx-dots-vertical-rounded bx-md'></i>
+              <i class='bx bx-transfer-alt bx-rotate-90 bx-md' ></i>
+            </div>
+          </div>
+        </div>         
+      </div>
+    
+      <div class="row d-flex" style="max-height: 478px; overflow-y: scroll; background-color: rgb(180, 178, 178);">
+        <div class="col-md-2">
+          <div class="cards" onclick="tambahpesanan('Egg sandwich', 1, 35000 )">
+            <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+                <img src="image/egg sandwich2.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                  <h6 class="card-title fw-bold">Egg sandwich</h6>
+                  <p class="card-text fw-bold">RP. 35.000</p>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Ham (chicken)', 1, 45000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+              <img src="https://eatingrichly.com/wp-content/uploads/2018/05/chicken-cordon-bleu-burgers-square-720x720.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Ham Chicken</h6>
+                <p class="card-text fw-bold">RP. 45.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Ham Cheese', 1, 48000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+              <img src="image/ham cheese.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Ham Cheese</h6>
+                <p class="card-text fw-bold">RP. 48.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Junior Veg Burger', 1, 30000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+              <img src="image/junior veg burger.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Junior Veg Burger</h6>
+                <p class="card-text fw-bold">RP. 30.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Masala Cola', 1, 35000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+              <img src="image/masala cola.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Sandwitch</h6>
+                <p class="card-text fw-bold">RP. 45.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Mutton Burger', 1, 37000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 10%; margin-left: 0px;">
+              <img src="https://assets.bonappetit.com/photos/60df168035cd8acaa96c460d/1:1/w_2560%2Cc_limit/Basically-Lamb-Burger.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Mutton Burger</h6>
+                <p class="card-text fw-bold">RP. 37.000</p>
+          </button>
+        </div>
+        
+        <div class="col-md-2" onclick="tambahpesanan('Fish Burger', 1, 22000 )">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="image/fish burger2.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Fish Burger</h6>
+                <p class="card-text fw-bold">RP. 22.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Ham Burger', 1, 20000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://asset.kompas.com/crops/fP_Q5TD9BOn5G5JTnntgtDIjQMI=/53x36:933x623/750x500/data/photo/2021/10/21/6171492e1ea12.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Ham Burger</h6>
+                <p class="card-text fw-bold">RP. 20.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Ice Lemon Masala', 1, 15000 )"style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://www.nestleprofessional.in/sites/default/files/2021-08/Masala-Iced-Tea_1.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Ice Lemon Masala</h6>
+                <p class="card-text fw-bold">RP. 15.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Lassi Salted', 1, 18000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="image/lasi.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Lassi Salted</h6>
+                <p class="card-text fw-bold">RP. 18.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Mint Lemonade', 1, 17000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="image/mintlemonade.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Mint Lemonade</h6>
+                <p class="card-text fw-bold">RP. 17.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Mutton Kebar Burger', 1, 27000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/hot-and-spicy-burgers-bee6c8f.jpg?quality=90&resize=440,400" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Mutton Kebar Burger</h6>
+                <p class="card-text fw-bold">RP. 27.000</p>
+          </button>
+        </div>
+
+        <div class="col-md-2" onclick="tambahpesanan('Green Apple Lemon', 1, 17000 )">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="image/greenapple.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Green Apple Lemon</h6>
+                <p class="card-text fw-bold">RP. 17.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Ham Egg', 1, 16000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://www.foodandwine.com/thmb/NEmvuD1kHu2_M99TCulGFQBcHAE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RECIPE1215-XL-open-face-egg-and-griddled-ham-breakfast-sandwiches-dbc29c7280ce43bc8e928d465553943c.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Ham Egg</h6>
+                <p class="card-text fw-bold">RP. 16.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Junior Chicken Burger', 1, 19000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://images.eatthismuch.com/img/444923_dillonc118_e7e94b6d-aa9e-4516-b5a4-4427a2b68a9b.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Junior Chicken Burger</h6>
+                <p class="card-text fw-bold">RP. 19.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Lassi Sweet', 1, 15000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured-500x500.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Lassi Sweet</h6>
+                <p class="card-text fw-bold">RP. 15.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Mushroom Cheese', 1, 35000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="image/masrum.jpg" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Mushroom Cheese</h6>
+                <p class="card-text fw-bold">RP. 35.000</p>
+          </button>
+        </div>
+        <div class="col-md-2" onclick="tambahpesanan('Muntton King Burger', 1, 35000 )" style="padding-left: 0px; padding-right: 0px;">
+          <button class="card-body" style="width: 10rem; height: 12rem; margin-top: 2%; margin-left: 0px;">
+              <img src="https://www.pngkey.com/png/full/130-1307595_bigg-boss-whopper-mutton-burger-king.png" class="card-img" alt="..." style="width: 120px; padding-top: 8px;">
+                <h6 class="card-title fw-bold">Muntton King Burger</h6>
+                <p class="card-text fw-bold">RP. 35.000</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="col-md-10" style="padding-top: 20px; padding-right: 4px; ">
+      <div class="card rounded-0">
+        <div class="card-body" style=" height: 3rem; padding-top: 6px; background-color: whitesmoke;"></div>
+      </div>
+    </div>
+    
+    <div class="col-md-2" style="padding-top: 14px; padding-left: 3px;">
+      <div class="btn btn-primary rounded-0 fw-bold" style="width: 100%; padding-top: 0px; padding-left: 3px;" type="button" onclick="print()">
+        <p style="margin-bottom: 0px;">Payment</p>
+        <p style="margin-bottom: 0px;">
+          <i class='bx bx-printer'></i>(CTRL + P)
+        </p>
+      </div>
+    </div>
+  </div>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  
+  function print() {
+      var contentDiv = document.getElementById('content');
+      var contentToPrint = contentDiv.innerHTML;
+      var newWindow = window.open('', '_blank');
+      newWindow.document.open();
+      newWindow.document.write(  contentToPrint  );
+      newWindow.document.close();
+      newWindow.print();
+    }
+    var cart = [];
+    function tambahpesanan(name, count, price) {
+        //mendapatkan array saat ini
+        var existingItem = cart.find(element => element.name === name);
+        //memeriksa array sudah ada atau belum
+        if (!existingItem) {
+            cart.push({ name: name, count: count, price: price });
+        } else {
+            existingItem.count++;
+        }
+        showCartList();
+    }
+
+
+
+    function showCartList() {
+        $(".tampilan").empty();
+        totalHarga = 0 ;
+        cart.forEach(function (item, index) {
+            $(".tampilan").append(`
+            <div class="card rounded-0" style="border: black solid 1px;">
+              <div class="card-body" style="padding-bottom: 2px; padding-top: 6px;">
+                <h6 class="card-title fw-bold d-flex">
+                  `+ item.name + `
+                  <p class="d-flex" style="margin-left: 10px; margin-right: 4px;">Rp. `+ item.price +`</p>
+                  <i class='bx bx-trash bx-md ml-auto' style="margin-left: 6%;" onclick="Hapus(`+ index + `)"></i>
+                </h6>
+              </div>
+              <h6 class="bungkus1 d-flex" style="margin-left: 14px;">
+                Unit Price:
+                <p class="d-flex fw-bold" style="margin-left: 18px;">Rp. `+ item.price + `</p>
+                <p style="margin-left: 15px; font-size: 14px;">Quantity :</p>
+                <p style="margin-left: 12px;">`+ item.count + `</p>
+              </h6>
+            </div>`);
+        })
+        console.log(cart)
+        var tot = 0;
+        var pjkpersentase = 0.1;
+        var totalpajak = 0;
+        for(var i = 0; i < cart.length; i++) {
+            tot = tot + (cart[i].count * cart[i].price)
+        }
+        var Pajak = tot * pjkpersentase;
+        totalpajak += Pajak;
+        var total = Pajak + tot;
+
+        $("#pajak").text("Rp. " + Pajak)
+        $("#total").text("Rp. " + total)
+    }
+    function Hapus(index) {
+        let text;
+        if (confirm (cart.splice(index, 1) && "Apakah Anda Yakin Untuk menghapus pesanan?")) {
+            showCartList();
+        } 
+
+    }
+
+    
+
+</script>
+
+
+</html>
